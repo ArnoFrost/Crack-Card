@@ -1,0 +1,107 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.crackhell.MainActivity" >
+
+
+	<TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/version"
+	        />
+
+    <TableRow >
+        
+         <TextView 
+             android:id="@+id/cardText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="卡号"
+             />
+        
+        <EditText
+         android:id="@+id/cardNumber"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:hint="请输入卡号，并用空格隔开"
+         android:selectAllOnFocus="true"            
+            />  
+    </TableRow>
+    
+    <TableRow >
+        <TextView 
+            android:id="@+id/sectorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扇区"
+            />
+        <EditText 
+            android:id="@+id/sectorNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="12"/>
+        
+    </TableRow>
+    
+        <TableRow >
+        <TextView 
+            android:id="@+id/secretKeytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="秘钥"
+            />
+        <EditText 
+            android:id="@+id/secretKeynumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+    </TableRow>
+
+        <Button
+            android:id="@+id/buttonCrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="破解" />
+        <TableRow >
+            <TextView 
+                android:id="@+id/moneyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金额"/>
+            <EditText 
+                android:id="@+id/moneyNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="输入整数范围0~65535"
+                android:inputType="number"/>
+            
+        </TableRow>
+        
+        <TableRow >
+            <TextView
+                android:id="@+id/moneySecrettext" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数值"/>
+            <EditText 
+                android:id="@+id/moneySecretkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+            
+        </TableRow>
+        
+            <Button
+            android:id="@+id/buttonCaculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计算" />
+
+</TableLayout>
